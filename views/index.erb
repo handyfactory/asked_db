@@ -1,0 +1,11 @@
+<h3>루엔에게 물어보세요</h3>
+<form action="/ask">
+    이름: <input type="text" name="name"><br>
+    내용: <input type="text"name="question"><br>
+    <input type="submit">
+</form>
+
+<%@questions.reverse.each do |q| %>
+    이름: <%=q.name%><br>
+    질문: <%=q.question%><br>
+<%end%>
